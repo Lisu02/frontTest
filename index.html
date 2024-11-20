@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mockup IDE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Playground</a></li>
+          <li><a href="problems.html">Problems</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+      <section id="playground">
+        <div class="container">
+          <h1>Mockup IDE</h1>
+
+          <div class="toolbar">
+            <label for="language-select">Wybierz język:</label>
+            <select id="language-select">
+              <option value="c">C</option>
+              <option value="python3">Python3</option>
+            </select>
+          </div>
+
+          <div id="editor"></div>
+          <div>
+            <button id="run-button">Run</button>
+            <div id="loader" class="loader"></div>
+          </div>
+          
+          <div id="output">Wynik zostanie wyświetlony tutaj...</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
